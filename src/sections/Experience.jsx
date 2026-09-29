@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,25 +102,21 @@ const Experience = () => {
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
-                  </GlowCard>
-                </div>
-                <div className="xl:w-4/6">
-                  <div className="flex items-start">
+                <div className="xl:w-full">
+                  <div className="flex items-start pl-0 md:pl-8">
                     <div className="timeline-wrapper">
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 ml-4 md:ml-8">
                       <div className="timeline-logo">
                         <img src={card.logoPath} alt="logo" />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
+                        <p className="mt-2 mb-5 text-[#8FA9C3] text-lg font-medium">
+                          {card.organization}
+                        </p>
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
