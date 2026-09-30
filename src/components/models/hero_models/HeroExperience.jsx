@@ -2,9 +2,8 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 
-import { Room } from "./Room";
+import { Earth } from "./Earth";
 import HeroLights from "./HeroLights";
-import Particles from "./Particles";
 import { Suspense } from "react";
 
 const HeroExperience = () => {
@@ -13,8 +12,8 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      {/* deep blue ambient */}
-      <ambientLight intensity={0.2} color="#1a1a40" />
+      {/* subtle ambient to keep the globe visible from all sides */}
+      <ambientLight intensity={0.45} color="#12213d" />
       {/* Configure OrbitControls to disable panning and control zoom based on device type */}
       <OrbitControls
         enablePan={false} // Prevents panning of the scene
@@ -27,13 +26,12 @@ const HeroExperience = () => {
 
       <Suspense fallback={null}>
         <HeroLights />
-        <Particles count={100} />
         <group
           scale={isMobile ? 0.7 : 1}
           position={[0, -3.5, 0]}
           rotation={[0, -Math.PI / 4, 0]}
         >
-          <Room />
+          <Earth />
         </group>
       </Suspense>
     </Canvas>

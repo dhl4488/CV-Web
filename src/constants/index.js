@@ -91,23 +91,23 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "React",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "JavaScript",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    name: "Esri ArcGIS",
+    imgPath: "/images/logos/arcGIS.png",
   },
   {
-    name: "Project Manager",
+    name: "Project Management",
     imgPath: "/images/logos/git.svg",
   },
 ];
@@ -178,7 +178,7 @@ const expCards = [
   {
     review: "...",
     imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
+    logoPath: "/images/logo2.png",
     title: "GIS Analyst (Co-op)",
     organization: "The Regional Municipality of York - Data Analytics and Visualization",
     date: "May 2023 - August 2023",
@@ -191,13 +191,25 @@ const expCards = [
   {
     review: "...",
     imgPath: "/images/exp4.png",
-    logoPath: "/images/logo4.png",
+    logoPath: "/images/logo3.png",
     title: "Monitoring and Data Services Strategist Support Officer (Co-op)",
     organization: "Environment and Climate Change Canada",
     date: "September 2022 - December 2022",
     responsibilities: [
       "Led Pacific Needs Index analysis at ECCC to identify optimal locations for additional moored buoys using spatial data to enhance marine weather data accuracy.",
       "Produced monthly maps illustrating the status and location of marine moored buoys to support monitoring and analysis efforts.",
+    ],
+  },
+  {
+    review: "...",
+    imgPath: "/images/exp4.png",
+    logoPath: "/images/logo4.png",
+    title: "Junior Engineer (Co-op)",
+    organization: "Trakcom",
+    date: "January 2022 - April 2022",
+    responsibilities: [
+      "Developed system visualizations for the communications network of the Mark V train, clarifying project scope and implementation steps.",
+      "Built and tested an in-house model of the Mark V train communications system to assess feasibility, operational reliability, and performance.",
     ],
   },
 ];
@@ -219,45 +231,45 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "...",
+    mentions: "",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "...",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "...",
+    mentions: "",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "...",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "...",
+    mentions: "",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "...",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "...",
+    mentions: "",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "...",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "...",
+    mentions: "",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "...",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "...",
+    mentions: "",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "...",
     imgPath: "/images/client6.png",
   },
 ];
