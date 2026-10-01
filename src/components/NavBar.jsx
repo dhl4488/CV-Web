@@ -42,11 +42,20 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="nav-actions">
+          <a href="/resume.pdf" download className="resume-btn group" aria-label="Download my resume in PDF format">
+            <div className="inner">
+              <span>Resume</span>
+              <img src="/images/arrow-down.svg" alt="" className="download-icon" />
+            </div>
+          </a>
+
+          <a href="#contact" className="contact-btn group">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        </div>
       </div>
     </header>
   );

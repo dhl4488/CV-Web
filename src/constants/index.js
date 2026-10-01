@@ -4,6 +4,10 @@ const navLinks = [
     link: "#work",
   },
   {
+    name: "Live Map",
+    link: "#live-map",
+  },
+  {
     name: "Experience",
     link: "#experience",
   },
@@ -11,17 +15,13 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
-  { text: "Data", imgPath: "/images/ideas.svg" },
-  { text: "Maps", imgPath: "/images/concepts.svg" },
-  { text: "Spatial Insights", imgPath: "/images/designs.svg" },
-  { text: "Patterns", imgPath: "/images/designs.svg" },
+  { text: "Data", imgPath: "/images/data.svg" },
+  { text: "Maps", imgPath: "/images/pin.svg" },
+  { text: "Spatial Insights", imgPath: "/images/layers.svg" },
+  { text: "Patterns", imgPath: "/images/pattern.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -31,44 +31,8 @@ const words = [
 const counterItems = [
   { value: 3, suffix: "+", label: "Years of Experience" },
   { value: 100, suffix: "+", label: "Created Maps" },
-  { value: 50, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
-];
-
-const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  { value: 25, suffix: "+", label: "Completed Projects" },
+  { value: 10, suffix: "+", label: "GIS Tools and Languages" },
 ];
 
 const abilities = [
@@ -91,8 +55,28 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React",
-    imgPath: "/images/logos/react.png",
+    name: "ArcGIS Pro",
+    imgPath: "/images/logos/arcGIS.png",
+  },
+  {
+    name: "QGIS",
+    imgPath: "/images/logos/qgis.png",
+  },
+  {
+    name: "ArcGIS Online",
+    imgPath: "/images/logos/arcGISOnline.png",
+  },
+  {
+    name: "SNAP",
+    imgPath: "/images/logos/snap.png",
+  },
+  {
+    name: "Experience Builder",
+    imgPath: "/images/logos/experienceBuilder.png",
+  },
+  {
+    name: "Earth Engine Code Editor",
+    imgPath: "/images/logos/earth-engine.png",
   },
   {
     name: "Python",
@@ -103,8 +87,24 @@ const techStackImgs = [
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Esri ArcGIS",
-    imgPath: "/images/logos/arcGIS.png",
+    name: "React",
+    imgPath: "/images/logos/react.png",
+  },
+  {
+    name: "SQL",
+    imgPath: "/images/logos/sql.png",
+  },
+  {
+    name: "Power BI",
+    imgPath: "/images/logos/power-bi.png",
+  },
+  {
+    name: "Tableau",
+    imgPath: "/images/logos/tableau.png",
+  },
+  {
+    name: "FME",
+    imgPath: "/images/logos/fme.png",
   },
   {
     name: "Project Management",
@@ -147,8 +147,6 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "...",
-    imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Recruiting File Administrator",
     organization: "Department of National Defence",
@@ -161,8 +159,6 @@ const expCards = [
     ],
   },
   {
-    review: "...",
-    imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Data & Analytics Technician (Co-op)",
     organization: "The Regional Municipality of York - Econonmic and Development Services",
@@ -176,8 +172,6 @@ const expCards = [
     ],
   },
   {
-    review: "...",
-    imgPath: "/images/exp3.png",
     logoPath: "/images/logo2.png",
     title: "GIS Analyst (Co-op)",
     organization: "The Regional Municipality of York - Data Analytics and Visualization",
@@ -189,8 +183,6 @@ const expCards = [
     ],
   },
   {
-    review: "...",
-    imgPath: "/images/exp4.png",
     logoPath: "/images/logo3.png",
     title: "Monitoring and Data Services Strategist Support Officer (Co-op)",
     organization: "Environment and Climate Change Canada",
@@ -201,8 +193,6 @@ const expCards = [
     ],
   },
   {
-    review: "...",
-    imgPath: "/images/exp4.png",
     logoPath: "/images/logo4.png",
     title: "Junior Engineer (Co-op)",
     organization: "Trakcom",
@@ -229,78 +219,25 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client1.png",
-  },
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "...",
-    mentions: "",
-    review:
-      "...",
-    imgPath: "/images/client6.png",
-  },
-];
-
 const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/danielhangyilee/",
+  },
+  {
+    name: "github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/dhl4488",
   },
 ];
 
 export {
   words,
   abilities,
-  logoIconsList,
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,
